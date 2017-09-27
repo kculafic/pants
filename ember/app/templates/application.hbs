@@ -1,20 +1,15 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<!-- {{welcome-page}} -->
-{{!-- Feel free to remove this! --}}
+
 <div class="container">
 
   <div class="">
     <h1>thing</h1>
   </div>
 
-  <div class="">
-    <p>this is where the data should render</p>
-  </div>
+    {{mn}}
+
+    {{outlet}}
 
   <div class="">
-    <button type="button" name="button">fetch</button>
+    <button type="button" name="button">{{#link-to 'mn'}}fetch{{/link-to}}</button>
   </div>
 </div>
-
-
-{{outlet}}

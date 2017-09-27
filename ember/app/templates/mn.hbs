@@ -1,0 +1,23 @@
+
+  <div class="">
+    <h3>Weather conditions in Minnesota:</h3>
+
+    <h3>Temperature: {{model.current_observation.feelslike_f}} &deg;F</h3>
+    <h3>icon: {{model.current_observation.icon_url}} </h3>
+
+    <img src={{model.current_observation.icon_url}} alt={{model.current_observation.icon}}>
+
+    <ul>
+      {{#each model as |scientist|}}
+      <li>{{scientist}}</li>
+      {{/each}}
+    </ul>
+
+
+
+
+    <p><em>this is where the data should render</em></p>
+  </div>
+
+
+{{outlet}}
