@@ -8,6 +8,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('mn');
+  this.route('il');
+  this.route('wa');
+  this.route('ak');
 });
 
 export default Router;
